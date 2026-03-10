@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Headphones | Experience Sound</title>
+    <style>
+
+        /* Simple CSS to make it look decent */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: #f4f4f4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .feature-list {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            width: 200px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #ccc;
+            font-size: 0.8rem;
+        }
+        .cta-button {
+            background: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+    <style>
+    /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* 1. Stack the navigation links vertically */
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* 2. Make the feature boxes full width instead of 3-in-a-row */
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 90%; /* Take up most of the screen width */
+        margin-bottom: 15px;
+    }
+
+    /* 3. Adjust the Hero text size so it doesn't overflow */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 4. Make the Modal (Popup) wider for thumbs */
+    .modal-content {
+        width: 80%;
+        margin: 30% auto;
+    }
+}
+</style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button id="theme-toggle" style="cursor:pointer; padding: 5px 10px; border-radius: 20px; border: 1px solid #fff; background: transparent; color: #fff; margin-left: 15px;">
+    🌙 Dark Mode
+</button>
+<script>
+    const toggleBtn = document.getElementById('theme-toggle');
+const body = document.documentElement; // Targets the <html> tag
+
+toggleBtn.addEventListener('click', (buy now) => {
+    // Check if the current theme is dark
+    if (body.getAttribute('data-theme') === 'dark') {
+        body.removeAttribute('data-theme');
+        toggleBtn.innerHTML = "🌙 Dark Mode";
+    } else {
+        body.setAttribute('data-theme', 'dark');
+        toggleBtn.innerHTML = "☀️ Light Mode";
+    }
+});
+
+       :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #222222;
+    --card-bg: #eeeeee;
+}
+
+/* These are the colors that will trigger in Dark Mode */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f4f4f4;
+    --header-bg: #000000;
+    --card-bg: #1e1e1e;
+}
+
+body { 
+    background-color: var(--bg-color); 
+    color: var(--text-color); 
+    transition: 0.3s; /* Makes the color change smooth */
+}
+
+.feature-item { background: var(--card-bg); }
+header { background: var(--header-bg); }
+</script>
+            <a href="#features">Features</a>
+            <a href="#video">Demo</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Silence the World.</h1>
+        <p>
+            The Zenith ANC-900 offers studio-quality sound with 40-hour battery life.
+        </p>
+        <br>
+        <a href="#pricing" class="cta-button">Buy Now</a>
+    </section>
+
+    <div class="container">
+        <section id="features">
+            <h2 style="text-align:center;">Why Zenith?</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Pure ANC</h3>
+                    <p>
+                        Blocks out 99% of background noise automatically.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <h3>40h Battery</h3>
+                    <p>
+                        Listen all week on a single charge via USB-C.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <h3>Hi-Res Audio</h3>
+                    <p>
+                        Custom 40mm drivers for crystal clear highs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr style="margin: 40px 0;">
+
+        <section id="video" style="text-align: center; padding: 40px 0;">
+            <h2>See it in Action</h2>
+
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Zenith ANC-900 Product Demo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe> <style>
+                    .video-container {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                        overflow: hidden;
+                        max-width: 100%;
+                    }
+
+                    .video-container iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                </style>
+            </div>
+        </section>
+        <footer>
+            <p>
+                &copy; 2026 Zenith Audio Tech. All rights reserved.
+            </p>
+        </footer>
+
+    </body>
+</html>
